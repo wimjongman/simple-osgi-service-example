@@ -1,0 +1,72 @@
+!SESSION 2012-10-31 12:48:42.136 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_07
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -dev file:C:/Users/jongw/git/simple-osgi-service-example/com.example.service.consumer/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog -console
+
+!ENTRY org.eclipse.osgi 4 0 2012-10-31 12:48:42.887
+!MESSAGE Error installing bundle: reference:file:../../git/simple-osgi-service-example/com.example.service.consumer/
+!STACK 0
+org.osgi.framework.BundleException: Error converting plugin at C:\Users\jongw\git\simple-osgi-service-example\com.example.service.consumer.
+	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.generateManifest(EclipseStorageHook.java:451)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.getGeneratedManifest0(EclipseStorageHook.java:428)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.getGeneratedManifest(EclipseStorageHook.java:397)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.createCachedManifest(EclipseStorageHook.java:392)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.getManifest(EclipseStorageHook.java:512)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.loadManifest(BaseStorage.java:316)
+	at org.eclipse.osgi.internal.baseadaptor.BundleInstall.begin(BundleInstall.java:82)
+	at org.eclipse.osgi.framework.internal.core.Framework.installWorkerPrivileged(Framework.java:941)
+	at org.eclipse.osgi.framework.internal.core.Framework$1.run(Framework.java:845)
+	at org.eclipse.osgi.framework.internal.core.Framework$1.run(Framework.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.Framework.installWorker(Framework.java:904)
+	at org.eclipse.osgi.framework.internal.core.Framework.installBundle(Framework.java:840)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.installBundle(BundleContextImpl.java:137)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.installBundles(EclipseStarter.java:1035)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.loadBasicBundles(EclipseStarter.java:622)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:277)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+Caused by: org.eclipse.osgi.service.pluginconversion.PluginConversionException: Could not find a META-INF/MANIFEST.MF, plugin.xml or a fragment.xml in C:\Users\jongw\git\simple-osgi-service-example\com.example.service.consumer.
+	at org.eclipse.core.runtime.internal.adaptor.PluginConverterImpl.fillPluginInfo(PluginConverterImpl.java:114)
+	at org.eclipse.core.runtime.internal.adaptor.PluginConverterImpl.convertManifest(PluginConverterImpl.java:714)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.generateManifest(EclipseStorageHook.java:448)
+	... 25 more
+Root exception:
+org.eclipse.osgi.service.pluginconversion.PluginConversionException: Could not find a META-INF/MANIFEST.MF, plugin.xml or a fragment.xml in C:\Users\jongw\git\simple-osgi-service-example\com.example.service.consumer.
+	at org.eclipse.core.runtime.internal.adaptor.PluginConverterImpl.fillPluginInfo(PluginConverterImpl.java:114)
+	at org.eclipse.core.runtime.internal.adaptor.PluginConverterImpl.convertManifest(PluginConverterImpl.java:714)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.generateManifest(EclipseStorageHook.java:448)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.getGeneratedManifest0(EclipseStorageHook.java:428)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.getGeneratedManifest(EclipseStorageHook.java:397)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.createCachedManifest(EclipseStorageHook.java:392)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseStorageHook.getManifest(EclipseStorageHook.java:512)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.loadManifest(BaseStorage.java:316)
+	at org.eclipse.osgi.internal.baseadaptor.BundleInstall.begin(BundleInstall.java:82)
+	at org.eclipse.osgi.framework.internal.core.Framework.installWorkerPrivileged(Framework.java:941)
+	at org.eclipse.osgi.framework.internal.core.Framework$1.run(Framework.java:845)
+	at org.eclipse.osgi.framework.internal.core.Framework$1.run(Framework.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.Framework.installWorker(Framework.java:904)
+	at org.eclipse.osgi.framework.internal.core.Framework.installBundle(Framework.java:840)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.installBundle(BundleContextImpl.java:137)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.installBundles(EclipseStarter.java:1035)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.loadBasicBundles(EclipseStarter.java:622)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:277)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
